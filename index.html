@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vansh Darji | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #00ffd5;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      color: #00ffd5;
+    }
+    header p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section-title {
+      color: #00ffd5;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .project {
+      margin-bottom: 1.5rem;
+    }
+    .project h3 {
+      color: #fff;
+    }
+    .project p {
+      color: #ccc;
+    }
+    ul.skills li {
+      list-style: none;
+      background: #1f1f1f;
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      color: #00ffd5;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+    }
+    a {
+      color: #00ffd5;
+      text-decoration: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background: #00ffd5;
+      color: #000;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    @media screen and (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      .section-title { font-size: 1.4rem; }
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #00ffd5;
+      border: none;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 999;
+    }
+    .light-theme {
+      background: #f2f2f2;
+      color: #000;
+    }
+    .light-theme header {
+      background: #eaeaea;
+    }
+    .light-theme a {
+      color: #006666;
+    }
+    .light-theme .section-title {
+      color: #006666;
+    }
+    .light-theme ul.skills li {
+      background: #ddd;
+      color: #006666;
+    }
+    .light-theme button {
+      background: #006666;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <header data-aos="zoom-in">
+    <img src="profile.jpg" alt="Vansh Darji">
+    <h1>Vansh Darji</h1>
+    <p>Web Developer · BCA Student · Lifelong Learner</p>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m currently pursuing a Bachelor of Computer Applications. My journey in programming started with a curiosity about how websites and software work. I now work with languages like Python, JavaScript, SQL, Java, HTML, CSS, and ASP.NET. I'm also exploring cybersecurity and machine learning. Cars and music keep me inspired and creative.</p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>SQL</li>
+      <li>ASP.NET</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>DBMS</li>
+    </ul>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="project">
+      <h3>Law Check (College Project)</h3>
+      <p>A full-stack AI-powered website that helps users understand Indian laws and the Constitution. Users can ask questions and get AI-generated legal responses. (In Progress)</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>This website you're viewing is built using HTML, CSS, and hosted on GitHub Pages to showcase my skills and resume.</p>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2 class="section-title">Resume</h2>
+    <p><a href="Vansh.resume.pdf" target="_blank">Download My Resume</a></p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2 class="section-title">Contact</h2>
+    <form action="https://formspree.io/f/xovwypov" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="_replyto" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:darjivansh1101@gmail.com">darjivansh1101@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/vansh-1101" target="_blank">vansh-1101</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vansh-darji-37343b2a4/" target="_blank">@vansh-darji</a></p>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>© 2025 Vansh Darji. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const toggleButton = document.querySelector('.theme-toggle');
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle('light-theme');
+      localStorage.setItem('theme', body.classList.contains('light-theme') ? 'light' : 'dark');
+      toggleButton.textContent = body.classList.contains('light-theme') ? '🌙' : '☀️';
+    }
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        toggleButton.textContent = '🌙';
+      } else {
+        toggleButton.textContent = '☀️';
+      }
+    }
+  </script>
+</body>
+</html>
